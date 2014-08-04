@@ -1,6 +1,6 @@
 package org.openstreetmap.josm.plugins.graphview.core.util;
 
-import static junit.framework.Assert.assertNull;
+import static org.junit.Assert.assertNull;
 import static org.openstreetmap.josm.plugins.graphview.core.util.ValueStringParser.parseMeasure;
 import static org.openstreetmap.josm.plugins.graphview.core.util.ValueStringParser.parseSpeed;
 import static org.openstreetmap.josm.plugins.graphview.core.util.ValueStringParser.parseWeight;
