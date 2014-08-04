@@ -24,7 +24,7 @@ public class AccessRulesetReaderTest {
     @Test
     public void testReadAccessRuleset_valid_classes() throws IOException {
 
-        InputStream is = new FileInputStream("plugins/graphview/test/files/accessRuleset_valid.xml");
+        InputStream is = new FileInputStream("plugins/graphview/test/data/accessRuleset_valid.xml");
         AccessRuleset ruleset = AccessRulesetReader.readAccessRuleset(is);
         assertNotNull(ruleset);
 
@@ -50,7 +50,7 @@ public class AccessRulesetReaderTest {
     @Test
     public void testReadAccessRuleset_valid_basetags() throws IOException {
 
-        InputStream is = new FileInputStream("plugins/graphview/test/files/accessRuleset_valid.xml");
+        InputStream is = new FileInputStream("plugins/graphview/test/data/accessRuleset_valid.xml");
         AccessRuleset ruleset = AccessRulesetReader.readAccessRuleset(is);
         assertNotNull(ruleset);
 
@@ -66,7 +66,7 @@ public class AccessRulesetReaderTest {
     @Test
     public void testReadAccessRuleset_valid_implications() throws IOException {
 
-        InputStream is = new FileInputStream("plugins/graphview/test/files/accessRuleset_valid.xml");
+        InputStream is = new FileInputStream("plugins/graphview/test/data/accessRuleset_valid.xml");
         AccessRuleset ruleset = AccessRulesetReader.readAccessRuleset(is);
         assertNotNull(ruleset);
 
@@ -106,5 +106,4 @@ public class AccessRulesetReaderTest {
         }
         return new MapBasedTagGroup(tagMap);
     }
-
 }
